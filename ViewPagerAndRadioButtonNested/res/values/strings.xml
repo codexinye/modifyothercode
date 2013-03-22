@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="app_name">新闻</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">底部菜单</string>
+    <string name="home">新闻</string>
+    <string name="subcribe">关注</string>
+    <string name="hot">热榜</string>
+    <string name="financial">财经</string>
+    <string name="search">搜索</string>
+    <string name="begin_subsciption">开始关注</string>
+    
+    <string name="financial_text1">指数</string>
+    <string name="financial_text2">最新价</string>
+    <string name="financial_text3">涨跌额</string>
+    <string name="financial_text4">涨跌幅</string>
+
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/main_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+		<FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+        <android.support.v4.view.ViewPager
+	        android:id="@+id/viewPager"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:layout_weight="1.0"
+	        android:background="#00000000"/>
+	        <!-- android:flipInterval="30"
+	        android:persistentDrawingCache="animation"  -->
+        <RadioGroup
+            android:id="@+id/main_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="70dip"
+            android:background="@drawable/tabbar_background"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/homeRadioButton"
+                style="@style/main_tab_bottom"
+                android:layout_marginTop="8.0dip"
+                android:background="@drawable/home"
+                android:tag="home_button" 
+                android:text="@string/home"
+                android:gravity="bottom|center_horizontal"/>
+
+            <RadioButton
+                android:id="@+id/subscribeRadioButton"
+                style="@style/main_tab_bottom"
+                android:layout_marginTop="8.0dip"
+                android:background="@drawable/subscription"
+                android:tag="subscribe_button" 
+                android:text="@string/subcribe"
+                android:gravity="bottom|center_horizontal"/>
+
+            <RadioButton
+                android:id="@+id/hotRadioButton"
+                style="@style/main_tab_bottom"
+                android:layout_marginTop="8.0dip"
+                android:background="@drawable/hot"
+                android:tag="hotnews_button" 
+                android:text="@string/hot"
+                android:gravity="bottom|center_horizontal"/>
+
+            <RadioButton
+                android:id="@+id/financialRadioButton"
+                style="@style/main_tab_bottom"
+                android:layout_marginTop="8.0dip"
+                android:background="@drawable/financial"
+                android:tag="financial_button" 
+                android:text="@string/financial"
+                android:gravity="bottom|center_horizontal"/>
+
+            <RadioButton
+                android:id="@+id/searchRadioButton"
+                style="@style/main_tab_bottom"
+                android:layout_marginTop="8.0dip"
+                android:background="@drawable/search"
+                android:tag="search_button" 
+                android:text="@string/search"
+                android:gravity="bottom|center_horizontal"/>
+        </RadioGroup>
+		
+    </LinearLayout>
+</TabHost>

@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/financial_index_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/titlebar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/image_titlebar_background" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginTop="9.0dip"
+            android:text="@string/financial"
+            android:textColor="@color/white"
+            android:textSize="23.0sp" />
+
+        <Button
+            android:id="@+id/titlebar_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5.0dip"
+            android:layout_marginTop="6.0dip"
+            android:background="@drawable/btn_titlebar_refresh_selector" />
+
+        <ProgressBar
+            android:id="@+id/titlebar_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="25.0dip"
+            android:layout_height="25.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14.0dip"
+            android:layout_marginTop="10.0dip"
+            android:clickable="false"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/categorybar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-16dip"
+        android:background="@drawable/image_categorybar_background" >
+
+
+        <HorizontalScrollView
+            android:id="@+id/categorybar_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="3.0dip"
+            android:layout_toLeftOf="@+id/category_arrow_right"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:id="@+id/category_layout"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical" >
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+    <RelativeLayout 
+        android:id="@+id/financial_index_table_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10.0dip"
+        android:background="@drawable/image_financial_index_table_title_background"
+        >
+        <TextView 
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/financial_text1"
+            android:textColor="#000000"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginTop="5.0dip"
+            android:layout_alignParentLeft="true"
+            />
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/txt3"
+            android:text="@string/financial_text2"
+            android:textColor="#000000"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="5.0dip"
+            />
+           <TextView
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/txt4"
+            android:text="@string/financial_text3"
+            android:textColor="#000000"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="5.0dip"
+            />
+      	<TextView
+            android:id="@+id/txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/financial_text4"
+            android:textColor="#000000"
+            android:layout_marginRight="15.0dip"
+            android:layout_marginTop="5.0dip"
+            />        
+    </RelativeLayout>
+
+</LinearLayout>
